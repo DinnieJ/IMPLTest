@@ -28,7 +28,7 @@ class LoginController extends Controller
             'email'  => $req->get('email'),
             'password' => $req->get('password')
         );
-        dd($user_data);
+        //dd($user_data);
         if(Auth::attempt($user_data)){
             return redirect('/home');
         }else{
