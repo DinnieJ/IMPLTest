@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+<h1></h1>
+@if (count($allrequest)>0)
 <table class="table">
         <thead>
           <tr>
@@ -39,5 +41,7 @@
       @endforeach
         </tbody>
       </table>
-
+@else
+<h1>There is current no request</h1>
+@endif
 @endsection

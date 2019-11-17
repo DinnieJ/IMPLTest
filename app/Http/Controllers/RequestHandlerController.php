@@ -7,7 +7,7 @@ use DB;
 class RequestHandlerController extends Controller
 {
     public function showAllRequest(){
-        $all_request = DB::table('Requests')->get();
+        $all_request = DB::table('Requests')->where('status',0)->get();
         //dd($all_request);
         return view('pages.requesthandler')->with('allrequest',$all_request);
     }
