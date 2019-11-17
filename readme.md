@@ -1,7 +1,7 @@
 <h1>Laravel test for IMPL</h1>
 <p>Before anything, run <strong>composer install</strong>
 <p>If you don't have composer, you can install it <a href="https://getcomposer.org/download/">here</a>
-The application still has flaw in the authentication at login so to use the application,please register a new user,if the register is successful, it will automatically login with the new registered user and go to the homepage
+<p>The application still has flaw in the authentication at login so to use the application,please register a new user,if the register is successful, it will automatically login with the new registered user and go to the homepage
 
 <h4>Path in the application</h4>
 <p>/login: login page
