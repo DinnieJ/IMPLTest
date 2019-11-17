@@ -12,7 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    if(Auth::check()){
+        return redirect()->to('/home');
+    }else{
+        return redirect()->to('/login');
+    }
 });
 
 Route::get('login','LoginController@showLogin');
