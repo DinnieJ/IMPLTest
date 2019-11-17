@@ -11,5 +11,6 @@
         <div class="form-group">
             <input type="submit" name="sendrequest" class="btn btn-primary" value="Send request" />
         </div>
-    </form> 
+    </form>
+    <a href="/home">Return to home</a>
 @endsection

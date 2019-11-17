@@ -28,10 +28,11 @@ class LoginController extends Controller
             'email'  => $req->get('email'),
             'password' => $req->get('password')
         );
+        dd($user_data);
         if(Auth::attempt($user_data)){
             return redirect('/home');
         }else{
-            return back()->with('error','Wrong username or password '. $user_data['email'].' '.$user_data['password']);
+            return back()->with('error','Wrong username or password');
         }
     }
 
