@@ -3,7 +3,7 @@
 <p>If you don't have composer, you can install it <a href="https://getcomposer.org/download/">here</a>
 <p>To run the application, enter <strong>php artisan serve</strong>
 <p>The application still has flaw in the authentication at login so to use the application,please register a new user,if the register is successful, it will automatically login with the new registered user and go to the homepage
-
+<h2>EDITED: The login function work perfectly</h2>
 <h4>Path in the application</h4>
 <p>/login: login page
 <p>/register: Register page

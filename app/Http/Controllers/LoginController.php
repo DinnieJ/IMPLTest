@@ -28,7 +28,10 @@ class LoginController extends Controller
             'email'  => $req->get('email'),
             'password' => $req->get('password')
         );
-        //dd($user_data);
+        //$user_from_db = DB::table('Users')->where('email',$user_data['email'])->get();
+        //dd($user_from_db[0]->password);
+        //$check = Hash::check($user_data['password'],$user_from_db[0]->password);
+        //dd($check);
         if(Auth::attempt($user_data)){
             return redirect('/home');
         }else{

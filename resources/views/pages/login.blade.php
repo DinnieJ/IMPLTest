@@ -27,8 +27,6 @@
  @endif
 
  <form method="POST" action="{{ url('/checklogin') }}">
-  <p>There is a problem with the login function</p>
-  <p>Please register a new user, then you will be automatically logged in and redirect to homepage</p>
   {{ csrf_field() }}
   <div class="form-group">
    <label>Enter username</label>
